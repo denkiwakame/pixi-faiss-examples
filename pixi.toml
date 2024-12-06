@@ -1,0 +1,25 @@
+[project]
+authors = ["denkiwakame <denkivvakame@gmail.com>"]
+channels = ["conda-forge"]
+description = "A collection of pixi-faiss examples"
+name = "pixi-faiss-examples"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+
+[feature.lint.tasks]
+actionlint = "actionlint"
+pre-commit-install = "pre-commit install"
+lint = "pre-commit run --all-files"
+
+[feature.lint.dependencies]
+actionlint = "*"
+ruff = "*"
+typos = "*"
+pre-commit = ">=4.0.1,<5"
+
+[environments]
+lint = { features = ["lint"] }
