@@ -1,0 +1,3 @@
+[submodule "faiss-gpu-build/faiss"]
+	path = faiss-gpu-build/faiss
+	url = git@github.com:facebookresearch/faiss.git
