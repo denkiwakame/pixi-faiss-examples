@@ -37,11 +37,10 @@ jobs:
         run: |
           cd faiss-gpu-build
           pixi install
-      - name: Build faiss-gpu
-        run: |
-          cd faiss-gpu-build
-          pixi run configure
 
+#       - name: Build faiss-gpu (requires GPU runner)
+#         run: |
+#           cd faiss-gpu-build
+#           pixi run configure
 #           pixi run build
 #           pixi run build-python
-
