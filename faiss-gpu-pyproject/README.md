@@ -1,3 +1,5 @@
+# faiss-gpu
+
 ## Installation
 
 ```sh
@@ -16,14 +18,4 @@ pixi run import
 
 ```sh
 pixi run test
-```
-
-## lint
-
-```sh
-pixi run pre-commit-install
-```
-
-```sh
-pixi run lint
 ```
