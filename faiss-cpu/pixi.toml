@@ -1,0 +1,13 @@
+[project]
+authors = ["denkiwakame <denkivvakame@gmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "faiss-cpu"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+faiss-cpu = "1.9.0.*"
+libblas = { version = "*", build = "*mkl" }
